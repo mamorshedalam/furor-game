@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] px-4 mx-auto;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}
+
+@layer base {
+  body {
+    @apply poppins_font;
+  }
+}
+
+@layer utilities {
+  .poppins_font {
+     font-family: 'Poppins', sans-serif;
+  }
+  .triangle_path{
+     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+}
