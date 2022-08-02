@@ -16,7 +16,10 @@
 
 @layer base {
   body {
-    @apply poppins_font text-xl;
+    @apply poppins_font md:text-xl text-sm;
+  }
+  a{
+    @apply inline-block
   }
 }
 
