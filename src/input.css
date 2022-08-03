@@ -6,26 +6,41 @@
   .container {
     @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] px-4 mx-auto;
   }
-  .flex-center {
+  .sl-flex-start {
+    @apply flex justify-start items-center;
+  }
+  .sl-flex-center {
     @apply flex justify-center items-center;
   }
-  .animated {
+  .sl-flex-between {
+    @apply flex justify-between items-center;
+  }
+  .sl-animated {
     @apply transition duration-300;
+  }
+  .sl-rating-icon {
+    @apply md:text-lg text-sm md:mx-1 mx-px;
+  }
+  .sl-triangle-icon {
+    @apply w-7 h-7 mx-auto my-2 triangle_path shadow-lg;
+  }
+  .sl-btn {
+    @apply w-full lg:p-3 p-2 text-sm font-bold text-center uppercase rounded sl-animated;
   }
 }
 
 @layer base {
   body {
-    @apply dm_font lg:text-xl text-sm;
+    @apply dm_font;
   }
-  a{
-    @apply inline-block
+  a {
+    @apply inline-block;
   }
 }
 
 @layer utilities {
   .dm_font {
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
   }
   .triangle_path {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
