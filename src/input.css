@@ -16,7 +16,7 @@
 
 @layer base {
   body {
-    @apply poppins_font md:text-xl text-sm;
+    @apply dm_font lg:text-xl text-sm;
   }
   a{
     @apply inline-block
@@ -24,8 +24,8 @@
 }
 
 @layer utilities {
-  .poppins_font {
-    font-family: "Poppins", sans-serif;
+  .dm_font {
+    font-family: 'DM Sans', sans-serif;
   }
   .triangle_path {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
